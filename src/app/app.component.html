@@ -1,0 +1,19 @@
+<body>
+  <div>
+    <table>
+      <tr>
+        <th colspan="5">Memory</th>
+      </tr>
+      <tr>
+        <td>
+            <button type="button" (click)="rules.returncard()">Return Card</button>
+        </td>
+    </tr>
+      <tr>
+        <td>
+          <app-cards *ngFor="let picture of rules.pokemon" [pic]="picture" class="card" ></app-cards>
+        </td>
+      </tr>
+    </table>
+  </div>
+</body>

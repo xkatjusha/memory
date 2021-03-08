@@ -1,0 +1,8 @@
+<div class="card" (click)="change()" *ngIf="isActive === true">
+  <span *ngIf="side === false"></span>
+  <span *ngIf="side === true" ><img class="card" src={{poke}}></span>
+</div>
+
+<div class="card placeholder" *ngIf="isActive === false">
+  <span>&nbsp;</span>
+</div>
